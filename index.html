@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!-- Name : Burhanuddin Lokhandwala-->
+<!-- Student Number : 991523243-->
+<!-- Campus : Davis-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css\main.css">
+		
+		<script>
+			function checkform()
+			{
+			alert(document.Assignment5.FName.value+" "+document.Assignment5.LName.value+"\n"+document.Assignment5.SNo.value);
+			return false;
+			}
+		</script>
+	</head>	
+		
+	<title>
+		Burhanuddin Lokhandwala
+	</title>
+	
+	<body>
+				<hr>
+		<section class="grid-container">
+			<header>
+				Assignment #4 - Burhanuddin Lokhandwala (Davis Campus)
+			</header>
+			
+			
+			
+			<section class="personal">
+			
+				<form name="Assignment5" method="get" onSubmit="return checkform()" action="">
+				<fieldset>
+				<legend> Personal </legend>
+				<label>Last Name : </label>
+					<input name="LName" type="text" size="30" value="Lokhandwala" required autofocus>
+					<br>
+				<label>First Name : </label>
+					<input name="FName" type="text" size="30" value="Burhanuddin" required>	
+					<br>
+				<label>Student Number : </label>
+					<input name="SNo" type="text" size="30" value="991523243" required>	
+					<br>
+				<label>Sheridan E-Mail ID : </label>
+					<input name="SEmail" type="text" size="30" value="lokhanbu@sheridancollege.ca" required>	
+					<br>
+				</fieldset>	
+			</section>
+			
+			<section class="exp">
+				<fieldset>
+				<legend>Experience</legend>
+				<label>Sheridan Start Date - </label>
+					<input type="date" id="startDate" value="2018-09-04">
+					<br>
+				<label>Previous Year of Postgraduate Experience - </label>
+					<input type="number" id="exp" value="0">
+					<br>
+				<label>Campus</label>
+					<select id="campus">
+						<option>Your Actual Campus</option>
+						<option>Davis</option>
+						<option>HMC</option>
+						<option>Trafalgar</option>
+					</select>
+				</fieldset>
+			</section>
+			
+			<section class="fin">
+				<fieldset>
+				<legend>Financial</legend>
+				<label>Amount of Money Received - </label>
+					<input type="number" id="amount" value="0">
+					<br>
+				<label>Money Source - </label>
+					<input type="checkbox" value="Family">Family
+					<input type="checkbox" value="Friends">Friends
+					<input type="checkbox" value="Scholarship">Scholarship
+					<input type="checkbox" value="Bursary">Bursary
+					<input type="checkbox" value="OSAP">OSAP
+				</fieldset>	
+			</section>
+			
+			<section class="comm">
+				<fieldset>
+				<legend>Comment</legend>
+				<label>Give Your Valuable Feedback - </label>
+				<textarea rows="4" cols="50">
+				</textarea>
+				</fieldset>
+			</section>
+			
+			<section class="subres">
+				
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+				
+			</section>
+				</form>
+		</section>
+	</body>
+	
+</html>

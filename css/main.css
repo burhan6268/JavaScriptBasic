@@ -1,0 +1,101 @@
+/* 
+	Name : Burhanuddin Lokhandwala
+	Student Number : 991523243
+*/
+
+body
+{
+	background-color:rgba(140,130,195,0.5);
+}
+
+header
+{
+	border:black 3px solid;
+	border-radius:4px;
+	text-shadow:3px 4px 5px red;
+	font-size: 2em;
+	box-shadow:3px 2px 5px 6px blue;
+	font-family:Consolas;
+	background-color:rgba(160,150,125,0.5);
+	grid-area:header;
+}
+
+.personal
+{
+	box-shadow:-3px -3px 6px white;
+	color:white;
+	text-shadow:3px 6px 3px blue;
+	border:black 3px solid;
+	border-radius:4px;
+	padding:6px;
+	background-color:rgba(240,200,145,0.5);
+	font-family:Rockwell;
+	text-align:left;
+	grid-area:p;
+}
+
+.exp
+{
+	box-shadow:3px -3px 6px red;
+	color:red;
+	text-shadow:3px 6px 3px white;
+	border:black 3px solid;
+	border-radius:4px;
+	padding:6px;
+	background-color:rgba(180,160,155,0.5);
+	font-family:Rockwell;
+	text-align:right;
+	grid-area:exp;
+}
+
+.fin
+{
+	box-shadow:-3px 3px 6px green;
+	color:blue;
+	text-shadow:3px 5px 3px white;
+	border:black 3px solid;
+	border-radius:4px;
+	font-family:Rockwell;
+	padding:6px;
+	background-color:rgba(120,190,255,0.5);
+	text-align:left;
+	grid-area:fin;
+}
+
+.comm
+{
+	box-shadow:3px 3px 6px yellow;
+	color:white;
+	text-shadow:3px 4px 3px red;
+	border:black 3px solid;
+	border-radius:4px;
+	font-family:Rockwell;
+	padding:6px;
+	background-color:rgba(220,150,195,0.5);
+	text-align:right;
+	grid-area:comm;
+}
+
+.subres
+{
+	border:black 3px solid;
+	border-radius:4px;
+	padding:6px;
+	background-color:rgba(200,180,100,0.5);
+	grid-area:subres;
+}
+
+.grid-container
+{
+	display:grid;
+	grid-template-areas:
+	"header header"
+	". ."
+	"p exp"
+	"fin comm"
+	"subres subres"
+	;
+	text-align:center;
+	grid-column-gap: 10px;
+	grid-row-gap: 15px;
+}
